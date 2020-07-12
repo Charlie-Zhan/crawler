@@ -12,7 +12,7 @@ fhandle = open("path_name","wb")
 fhandle.write(data)
 fhandle.close()
 #方法2,直接将对应信息写入本地文件
-filename = urllib.request.urlretrieve("http:www.baidu.com",filename= "local_path")
+filename = urllib.request.urlretrieve("http://www.baidu.com",filename= "local_path")
 urllib.request.urlcleanup() #清除缓存
 
 #******************************************************#
