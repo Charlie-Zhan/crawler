@@ -21,7 +21,7 @@ urllib.request.urlcleanup() #清除缓存
 
 #方式1：使用urllib.request.build_opener()修改报头
 url = "..."
-header = ("User-Agent","...")
+headers = ("User-Agent","...")
 opener = urllib.request.build_opener() #创建自定义的opener对象并赋给变量opener
 opener.addheaders =[headers] #设置opener对象的addheaders，设置对应的头信息
 data = opener.open(url).read()  #使用opener对象的open()方法打开相应的网址，并read()方法读取相应数据，然后赋给data变量
